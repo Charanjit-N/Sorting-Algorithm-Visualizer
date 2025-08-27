@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sorting Algo Visualizer</title>
+</head>
+<body>
+
+    <div class ="navbar">
+        <h2 class="title"> Sorting Algorithm Visualizer</h2>
+    </div>
+
+    <div class ="center-container">
+        <div class="options-container">
+            
+            <select name="select sorting algo" id="select" class="algo-menu" >
+                
+                <option value="0">Choose Algo</option>
+                <option value="1">Insertion Sort</option>
+                <option value="2">Bubble Sort</option>
+                <option value="3">Selection Sort</option>
+                <option value="4">Merge Sort</option>
+                <option value="5">Quick Sort</option>
+            </select>
+
+            <select name="select array size" id="select" class ="size-menu" >
+                <option value="0">Array size</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+                <option value="100">100</option>
+            </select>
+
+            <select name="speed of visualization" id="select" class="speed-menu" >
+                <option value="0">Speed</option>
+                <option value="0.5">0.50x</option>
+                <option value="0.75">0.75x</option>
+                <option value="1">1.00x</option>
+                <option value="2">2.00x</option>
+                <option value="4">4.00x</option>
+            </select>
+
+            <a id="regenerate" onclick="RenderScreen()">Regenerate Array</a>
+
+            <a class="sort">Sort</a>
+
+        </div>
+       
+        <div class = "bars-container">
+            <div class="bars"></div>
+        </div>
+       
+        
+    </div>
+
+    <footer class="footer">
+        <p>By Charanjit Nandigama</p>
+        <p>
+            <a href="https://www.linkedin.com/in/charanjit-nandigama-a67601324/"  class="link">
+                <i class="fa-brands fa-linkedin"></i>     
+            </a>
+            
+            <a href="https://github.com/Charanjit-N" class="link">
+                <i class="fa-brands fa-github"></i>  
+            </a>
+        </p>
+    </footer>
+    
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/utility.js"></script>
+    <script src="./scripts/sorting-algorithms.js"></script>
+</body>
+</html>
